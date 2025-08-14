@@ -1,0 +1,97 @@
+/* Container principal */
+.list {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Titre */
+.list > p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Table globale */
+.list-table {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Ligne de titre */
+.list-table-format.title {
+  display: grid;
+  grid-template-columns: 80px 1fr 2fr 1fr 1fr 80px;
+  background-color: #fff5f5;
+  color: #d32f2f;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Ligne des items */
+.list-table-format {
+  display: grid;
+  grid-template-columns: 80px 1fr 2fr 1fr 1fr 80px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  align-items: center;
+  transition: 0.2s ease;
+}
+
+.list-table-format:hover {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Image */
+.list-table-format img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Texte */
+.list-table-format p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Bouton action simple */
+.action-btn {
+  background-color: tomato;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+}
+
+.action-btn:hover {
+  background-color: #cc2d3a;
+}
+
+/* Responsive simple */
+@media (max-width: 768px) {
+  .list-table-format,
+  .list-table-format.title {
+    grid-template-columns: 60px 1fr 1fr 1fr 1fr auto;
+  }
+
+  .list-table-format img {
+    width: 50px;
+    height: 50px;
+  }
+}
+.cursor{
+    cursor: pointer;
+}

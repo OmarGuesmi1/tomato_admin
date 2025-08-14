@@ -25,26 +25,25 @@
 }
 
 /* Image Upload */
-.add-img-upload {
+.add-image-upload {
   align-items: center;
-  text-align: center;
 }
 
-.add-img-upload label {
+.add-image-upload label {
   cursor: pointer;
   display: inline-block;
   padding: 10px;
   border: 2px dashed #ccc;
   border-radius: 8px;
   background: #fafafa;
-  transition: border-color 0.3s ease;
+  transition: 0.3s ease;
 }
 
-.add-img-upload label:hover {
+.add-image-upload label:hover {
   border-color: tomato; /* accent color */
 }
 
-.add-img-upload img {
+.add-image-upload img {
   width: 100px;
   height: 100px;
   object-fit: contain;
@@ -65,7 +64,7 @@
 .add input:focus,
 .add textarea:focus,
 .add select:focus {
-  border-color: tomato;
+  border-color: tomato; /* same as sidebar accent */
   outline: none;
 }
 
@@ -74,11 +73,14 @@
   min-height: 100px;
 }
 
-/* Category */
+/* Category & Price in Row */
 .add-category-price {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  gap: 20px;
+}
+
+.add-category-price > div {
+  flex: 1;
 }
 
 /* Labels */
@@ -91,7 +93,7 @@
 
 /* Button */
 .add-btn {
-  background-color: tomato;
+  background-color: tomato; /* matching sidebar accent color */
   color: white;
   padding: 12px 20px;
   border-radius: 6px;
