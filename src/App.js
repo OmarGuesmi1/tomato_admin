@@ -3,13 +3,15 @@ import Navbar from './components/Navbar/Navbar'
 import Sidebar from './components/Sidebar/Sidebar'
 import List from './pages/List/List'
 import Add from './pages/Add/Add'
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Orders from './pages/Orders/Orders'
 import { Routes,Route} from 'react-router-dom'
 const App = () => {
   return (
     <div>
         <div>
+          <ToastContainer/>
           <Navbar/>
           <hr/>
           <div className="app-content">

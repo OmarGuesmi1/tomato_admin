@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Add.css';
 import { assets } from '../../assets/assets';
 import axios from 'axios';
+import { toast } from 'react-toastify';
 
 const Add = () => {
   const url = "http://localhost:4000";
@@ -38,6 +39,7 @@ const Add = () => {
           category: "Salad"
         });
         setImage(false);
+        toast.success(response.data.message)
       }
     } catch (error) {
       console.error("Error adding product:", error);
